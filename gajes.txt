@@ -1,0 +1,21 @@
+notif orangtua kalo belanja yg engak2 ato kalo ga imbang dikasi tau
+bantuan sesama anak kepekaan banyak yg seumur dan ga seberuntung => ortu list mana yg mau dikasi
+
+
+TODO
+- dummy API
+-> /banking/v2/corporates/{CorporateID} /accounts/{AccountNumber}/statements	Get your account statement
+-> POST	/banking/corporates/transfers
+-> b38d65a6-92d4-46be-a219-a4178802b86f
+
+
+var ClientOAuth2 = require('client-oauth2')
+
+var bcaAuth = new ClientOAuth2({
+  clientId: 'b38d65a6-92d4-46be-a219-a4178802b86f',
+  clientSecret: 'cbd8fbdc-8f25-4a37-89ac-92e5eb0286a8',
+  accessTokenUri: 'https://api.finhacks.id/api/oauth/token',
+  authorizationUri: 'https://github.com/login/oauth/authorize',
+  redirectUri: 'http://example.com/auth/github/callback',
+  scopes: ['notifications', 'gist']
+})
